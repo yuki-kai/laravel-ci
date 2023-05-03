@@ -38,7 +38,7 @@ jobs:
       - run:
           name: deploy
           command: |
-            ssh -o StrictHostKeyChecking=no -t webapp@${HOST_NAME} "cd laravel-ci && \
+            ssh -o StrictHostKeyChecking=no -t webapp@54.150.194.130 "cd laravel-ci && \
               git pull origin main && \
               composer install -n --no-dev --prefer-dist && \
               npm ci && \
